@@ -126,6 +126,9 @@ Below is a high-level entity-relationship view of the **DealerIQ Enterprise Data
 
 ![DealerIQ EDM Diagram](./docs/images/DealerIQ_Core_Entities.png)
 
+![DealerIQ Business_Intelligence Domains](./docs/images/DealerIQ_Business_Intelligence_Domains.png)
+
+
 ## 8. EDM Verification Checklist
 
 | **Dimension** | **Verification Goal** |
