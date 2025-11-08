@@ -81,7 +81,7 @@ This document details how **DealerIQ’s AI and real-time ecosystem** is archite
 | **LLM Cache Layer** | Response caching for high-volume queries. | Redis / LMCache |
 | **Voice Layer (Optional)** | Converts speech queries to text for mobile dealers. | Whisper + LLM Pipeline |
 
-## 🚀 7. Realtime AI Dataflow
+## 7. Realtime AI Dataflow
 
 ```mermaid
 flowchart LR
