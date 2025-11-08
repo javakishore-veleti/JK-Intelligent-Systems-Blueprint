@@ -290,7 +290,7 @@ This document is **not a finalized or released product**, but rather a **compreh
 | **Observability/Security** | Monitoring, logging, governance | Prometheus, ELK, Guardrails.ai |
 | **Feedback Loop** | Continuous learning & personalization | RLHF, Feedback Service, DataOps |
 
-## 🚀 System Behavior Summary
+## System Behavior Summary
 
 **User → Angular Frontend → API Gateway → LLM Orchestrator → Vector DB / Neo4j → Response Rendered → Feedback Captured → MLOps Retraining → Improved Model Deployment**
 
