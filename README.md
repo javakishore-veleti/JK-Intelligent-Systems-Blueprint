@@ -6,6 +6,7 @@ This document represents a conceptual and innovative exploration of potential AI
 It is not a finalized or commercially released product specification, but rather a thought framework for possible future development, research collaboration, or architectural inspiration.
 The ideas, names, and functionalities described here are intended for innovation planning and conceptual modeling purposes only.
 
+
 ## 1. Product Vision
 
 To empower manufacturing, industrial, and machinery enterprises with a suite of AI-driven products that make organizational knowledge accessible, actionable, and intelligent - bridging the gap between data, people, and decisions.
@@ -23,6 +24,39 @@ Enterprises in machinery, manufacturing, and parts industries face:
 - Low visibility into AI ROI and operational knowledge flow.
 
 An Intelligence Suite transforms these pain points into connected, intelligent workflows - enabling real-time discovery, learning, and decision-making across departments.
+
+# This Git Repository File Overview – JK Intelligent Systems Blueprint
+
+| **File / Folder Name** | **Purpose / Description** | **Category** |
+|--------------------------|---------------------------|----------------|
+| **README.md** | Root overview of the entire project; introduction and vision for *DealerIQ – Intelligence Suite*. | Documentation |
+| **LICENSE** | License file specifying usage permissions and terms for the repository. | Governance |
+| **.gitignore** | Configuration file specifying which files/folders Git should ignore. | Configuration |
+| **docs/images/** | Folder containing all architecture diagrams, infographics, and reference visuals used in Markdown files. | Assets |
+| **DealerIQ_PRD.md** | Comprehensive Product Requirements Document (PRD) for DealerIQ including business units, ML/GenAI use cases, and architecture. | Product Design |
+| **DealerIQ_DealerIQ_Development_Kickoff_Guide.md** | Detailed development guide describing architecture, microservices, portals, and implementation roadmap. | Development |
+| **DealerIQ_Development_Kick-off_Guide.md** | Earlier or simplified version of the development kickoff guide; retained for version comparison. | Development |
+| **DealerIQ_AI_ML_GenAI_Real-Time_Focus.md** | Focused guide on implementing AI, ML, and GenAI components with real-time integration pipelines. | AI/ML Architecture |
+| **DealerIQ_Fine-Tuning_Embedding_Strategy.md** | Document outlining strategies for LLM fine-tuning, embeddings, and model optimization. | GenAI / ML Strategy |
+| **DealerIQ_MLOps_AIOps_DataOps_Strategy.md** | End-to-end operational strategy for managing ML, AI, and GenAI pipelines through MLOps, AIOps, and DataOps frameworks. | AI/ML Operations |
+| **DealerIQ_GenAI_Notebooks_Directory_Guide.md** | Directory plan and structure for ML/GenAI notebooks (Jupyter), organized by function and experiment type. | Research / Data Science |
+| **DealerIQ_Event-Driven_Architecture_EDA.md** | Event-driven architecture framework showing how DealerIQ uses Kafka and microservices for real-time integration. | System Architecture |
+| **DealerIQ_EnterpriseDataWarehouse_EDW_Dimensional_Modeling.md** | Data modeling document for EDW — star schema, fact/dimension structure, and analytical flows. | Data Architecture |
+| **DealerIQ_DORA-aligned_Observability_Framework.md** | Observability and DORA metrics documentation for system reliability, performance, and DevOps insights. | Observability |
+| **DealerIQ_Building_a_DealerIQ-Specific_Canvas.md** | Conceptual guide for defining custom DealerIQ business capability canvases and innovation models. | Conceptual Framework |
+
+### Summary by Category
+
+| **Category** | **Files** | **Focus** |
+|---------------|-----------|------------|
+| **Core Documentation** | `README.md`, `LICENSE`, `.gitignore` | Repository governance and overview |
+| **Product Design** | `DealerIQ_PRD.md` | Business, domain, and AI product definition |
+| **Development & Architecture** | `DealerIQ_DealerIQ_Development_Kickoff_Guide.md`, `DealerIQ_Development_Kick-off_Guide.md`, `DealerIQ_Event-Driven_Architecture_EDA.md` | Implementation roadmap and microservices structure |
+| **AI / ML / GenAI Strategy** | `DealerIQ_AI_ML_GenAI_Real-Time_Focus.md`, `DealerIQ_Fine-Tuning_Embedding_Strategy.md`, `DealerIQ_MLOps_AIOps_DataOps_Strategy.md` | Intelligence layer design and operational automation |
+| **Data & Analytics Architecture** | `DealerIQ_EnterpriseDataWarehouse_EDW_Dimensional_Modeling.md`, `DealerIQ_DORA-aligned_Observability_Framework.md` | Data pipelines, warehousing, and observability |
+| **Research & Ideation** | `DealerIQ_Building_a_DealerIQ-Specific_Canvas.md`, `DealerIQ_GenAI_Notebooks_Directory_Guide.md` | Innovation framework and research documentation |
+| **Visual Assets** | `docs/images/` | Architecture and visualization repository |
+
 
 ## 3 - Domain-Specific Business Goals & Objectives
 | **Domain** | **Actors** | **Business Goals** | **KPIs / Outcomes** |
