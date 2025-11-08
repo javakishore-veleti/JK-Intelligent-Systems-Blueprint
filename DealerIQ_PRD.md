@@ -157,8 +157,6 @@ This table connects DealerIQ’s GenAI use cases to their **technical building b
 - **RLHF (Reinforcement Learning from Human Feedback)** — iterative quality improvement  
 - **Multi-Modal AI** — combining text, image, and document reasoning  
 
----
-
 | **Use Case** | **GenAI Method(s)** | **Key Components / Tools** | **Input Sources** | **Output / Deliverable** | **Purpose / Description** |
 |---------------|--------------------|-----------------------------|-------------------|---------------------------|----------------------------|
 | **Dealer Conversational Assistant** | LLM + RAG | Spring AI, LangChain, Weaviate, Neo4j | Dealer queries, manuals | Natural-language response | Contextual, conversational dealer support assistant. |
@@ -219,7 +217,7 @@ This table connects DealerIQ’s GenAI use cases to their **technical building b
 | **GenAIOps & Observability** | LangSmith + Prometheus + Grafana | Monitors latency, cost, and accuracy |
 | **Guardrails / Safety Layer** | Guardrails.ai, OpenAI moderation | Enforces compliance and content safety |
 
-## Summary
+## Summary on Generative AI Architecture
 
 DealerIQ’s **Generative AI Architecture** seamlessly connects:
 - **LLMs for reasoning and summarization**
@@ -230,6 +228,83 @@ DealerIQ’s **Generative AI Architecture** seamlessly connects:
 - **GenAIOps for governance and performance**
 
 This design allows **each GenAI use case** to operate within a **controlled, explainable, and cost-optimized ecosystem**, making DealerIQ’s intelligence **context-aware, compliant, and continuously improving**.
+
+#  DealerIQ – Product Overview (Structured) - Product Capability & Use Case Alignment Matrix
+
+### Categorized by:
+**Business Unit | Business Process | Business Data | AI/ML/GenAI Capability | Application / Tech Stack Layer | Specific Use Cases**
+
+| **Business Unit** | **Business Process** | **Business Data (Core Entities)** | **AI/ML/GenAI Capability** | **Application / Tech Stack Layer** | **Specific Use Cases** |
+|--------------------|----------------------|----------------------------------|-----------------------------|-----------------------------------|--------------------------|
+| **Product Intelligence** | Product Data Management | Product, SKU, Catalog, Supplier | Unified product data model; schema harmonization | Spring Boot, PostgreSQL, dbt, EDM alignment | - Centralized product catalog sync<br>- Cross-brand SKU harmonization<br>- Product master deduplication |
+| | Product Discovery | Product Specs, Manuals | Conversational AI search (LLM); RAG on product corpus | LangChain, Spring AI, Weaviate | - Natural-language product search<br>- “Find compatible parts” assistant<br>- Multilingual dealer product Q&A |
+| | Product Comparison | Product Attributes | AI-generated comparison using embeddings | LLM Orchestrator + Vector DB | - Product A vs B comparison<br>- AI-driven spec difference report<br>- Competitive product analytics |
+| | Visual Identification | Product Images | Visual recognition using computer vision | PyTorch, CLIP/ResNet, FastAPI | - Identify parts via image upload<br>- Visual matching for missing labels<br>- Equipment diagram recognition |
+| | Compatibility Mapping | SKU, Parts, Assemblies | Graph-based reasoning with Neo4j | Neo4j, LangChain Graph Integrator | - Cross-brand part compatibility check<br>- Substitution part recommendation<br>- Relationship-driven SKU discovery |
+| **Pricing Intelligence** | Price Management | Price List, Currency, Discount Rules | Elasticity prediction using ML | XGBoost, MLflow | - Price elasticity forecasting<br>- Competitor-based pricing adjustment<br>- Seasonal pricing optimization |
+| | Dynamic Pricing | Sales Orders, Region | Predictive margin optimization | Python ML microservice + Kubeflow | - Dealer-specific pricing recommendations<br>- Regionally adaptive pricing<br>- Dynamic discount suggestions |
+| | Promotion Optimization | Campaign, ROI | ML campaign uplift modeling | TensorFlow, PySpark | - Campaign ROI prediction<br>- Promotion effectiveness clustering<br>- Auto-selection of high-impact offers |
+| | Quote Generation | Dealer, Product, Price | LLM-based personalized quote builder | GPT/Mistral + Spring Boot API | - Auto quote generation per dealer<br>- Natural-language quote negotiation<br>- Instant multi-SKU quotation builder |
+| **Inventory & Supply Chain** | Stock Visibility | Inventory, Warehouse, Region | Real-time synchronization & alerting | Kafka, PostgreSQL, Redis | - Warehouse-level stock dashboard<br>- Real-time low-stock alerts<br>- Dealer stock subscription updates |
+| | Demand Forecasting | Inventory, Sales, Seasonality | Time-series forecasting (LSTM, Prophet) | Prophet, TensorFlow | - Predict SKU-level demand<br>- Seasonal restock forecasting<br>- Dealer demand prediction |
+| | Reorder Management | Stock Levels, Lead Time | Predictive reorder assistant | ML + Rules Engine | - Optimal reorder quantity suggestion<br>- Supplier lead-time forecasting<br>- Auto-purchase order trigger |
+| | Warehouse Optimization | Inventory, Shipments | Multi-objective optimization | OR-Tools, Scikit-Optimize | - Warehouse-to-region stock balancing<br>- Cost-efficient shipment routing<br>- Optimal warehouse assignment |
+| | Edge Operations | Warehouse Nodes | Edge AI for offline prediction | MQTT, Docker Edge Runtime | - Offline stock check<br>- Edge reorder assistant<br>- Local data caching and sync |
+| **Dealer Engagement** | Dealer Onboarding | Dealer, Region, Profile | Success probability modeling | Logistic Regression, XGBoost | - Dealer onboarding success scoring<br>- Regional onboarding prioritization<br>- New dealer qualification screening |
+| | Dealer Lifecycle | Dealer Activity, Revenue | Retention & churn prediction | Scikit-learn, MLflow | - Churn risk detection<br>- Dealer engagement forecasting<br>- Loyalty score tracking |
+| | Dealer Support | Ticket, Conversation | LLM triage, multi-turn reasoning | LangChain + DealerIQ-LLM | - “AI Support Copilot” for tickets<br>- Chat-based troubleshooting<br>- Ticket auto-prioritization |
+| | Dealer Experience | Feedback, Satisfaction | Sentiment analysis, RLHF | Hugging Face, LangFuse | - Dealer sentiment dashboard<br>- RLHF-based model improvement<br>- Feedback-based AI tone tuning |
+| | Dealer Communication | Message, Email, Campaign | LLM text generation | GPT + Spring Orchestrator | - Personalized dealer outreach<br>- Automated follow-up emails<br>- Regional message templates |
+| **Sales & Marketing Intelligence** | Campaign Management | Promotion, ROI | LLM + Fine-Tuning | Mistral / OpenAI APIs | - Campaign message generation<br>- Region-specific content creation<br>- Marketing asset auto-translation |
+| | Revenue Forecasting | Orders, Pricing | Predictive regression modeling | MLflow, Prophet | - Monthly sales forecast<br>- Dealer-specific sales projections<br>- Territory-level revenue prediction |
+| | Cross-Selling | Order History, SKU | Recommendation modeling | LightFM, Collaborative Filtering | - “Recommended Add-ons” engine<br>- Dealer bundle optimization<br>- Accessory upsell suggestions |
+| | Dealer Loyalty | Engagement Metrics | Classification + Clustering | CatBoost, SHAP | - Loyalty classification<br>- Dealer reward prediction<br>- Lifetime value forecasting |
+| | Regional Performance | Territory, Dealer KPIs | BI + LLM narrative synthesis | Grafana, Angular, LangChain | - Regional insights summary<br>- Auto-generated business reports<br>- KPI anomaly detection |
+| **Knowledge & Support Intelligence** | Knowledge Base Creation | Manuals, SOPs, FAQs | Auto-document generation (RAG) | LangChain, Weaviate | - Technical doc summarization<br>- FAQ auto-generation<br>- Knowledge refresh pipeline |
+| | Ticket Summarization | Support Logs | Summarization LLM | DealerIQ-LLM, LangFuse | - Long-thread summarization<br>- Action item extraction<br>- Root cause analysis output |
+| | Warranty Claim Triage | Claims, Issues | Text classification + summarization | BERT, T5, FastAPI | - Claim categorization<br>- Fraud detection<br>- Priority routing suggestions |
+| | Technical Document Search | Manuals, Specs | Semantic vector search | OpenAI Embeddings + Weaviate | - Contextual manual lookup<br>- “Find part by spec” search<br>- Similar doc recommendations |
+| | Auto-Report Generation | Support, KPIs, Forecast | Generative report builder | LangChain + Markdown | - Dealer performance report<br>- Model accuracy report<br>- AI summary dashboards |
+| **Data Intelligence Layer** | Data Integration | ERP, CRM, OEM APIs | Stream ingestion & harmonization | Airbyte, Kafka Connect | - ERP feed normalization<br>- CRM sync pipelines<br>- Supplier data validation |
+| | Data Quality Management | Ingested Tables | Data validation (rules & stats) | Great Expectations, dbt | - Data anomaly alerts<br>- Schema drift detection<br>- Missing value profiling |
+| | Synthetic Data | Sales, Inventory | LLM data generation | GPT + Faker + Python | - Privacy-safe dataset creation<br>- Synthetic dealer transactions<br>- Embedding fine-tuning corpus |
+| | Data Governance | Metadata, Schema | SOC2/GDPR alignment | DataHub, Guardrails.ai | - Sensitive data tagging<br>- Policy validation<br>- Audit report generation |
+| | EDM Alignment | Entities, Attributes | Canonical data mapping | dbt, YAML Schemas | - EDM→EDW synchronization<br>- Schema lineage graph<br>- Data model harmonization |
+| **AI/ML Lifecycle (MLOps)** | Feature Management | Dealer, Product | Shared feature registry | Feast, Tecton | - Real-time feature sync<br>- Feature lineage audit<br>- Cross-model feature reuse |
+| | Model Training | Structured Data | AutoML pipeline | Kubeflow, MLflow | - Continuous retraining<br>- Hyperparameter tuning<br>- Experiment tracking |
+| | Drift Detection | Feature Stats | Drift + bias monitoring | EvidentlyAI, Prometheus | - Input feature drift alerts<br>- Performance degradation alerts<br>- Auto retrain triggers |
+| | Model Deployment | Artifacts, Endpoints | Blue/Green + Canary | Seldon Core, ArgoCD | - Safe rollout of new models<br>- Version rollback<br>- Staged validation |
+| | Explainability | Model Outputs | SHAP, Explainable AI layer | SHAP / ELI5 | - Dealer pricing justification<br>- Feature importance visualization<br>- Model audit documentation |
+| **Generative AI (GenAI)** | Conversational AI | Dealer Queries | LLM Orchestrator + RAG | LangChain, Spring AI | - Dealer Q&A assistant<br>- Warranty chatbot<br>- Search companion |
+| | Fine-Tuning | Domain Corpus | LoRA/PEFT domain adaptation | Hugging Face, MLflow | - DealerIQ-LLM customization<br>- Product terminology adaptation<br>- Tone tuning for region |
+| | RAG Context Injection | Manuals, Catalog | Retrieval + Prompt Augmentation | Neo4j, Weaviate | - Contextual grounding for answers<br>- Real-time manual lookup<br>- Embedding refresh pipeline |
+| | RLHF Feedback Loop | Feedback, Ratings | Reinforcement learning | LangFuse, Hugging Face RLHF | - Response refinement<br>- Sentiment-based optimization<br>- LLM self-improvement loop |
+| | Persona Adaptation | Dealer Profiles | Dynamic prompt tuning | GenAIOps, LangChain | - Tone adjustment per dealer<br>- Persona-driven style variation<br>- Adaptive sales vs. support mode |
+| | Voice & Multimodal | Audio, Images, Text | Speech & Vision fusion | Whisper, CLIP, BLIP | - Voice-based dealer assistant<br>- Visual QA for product photos<br>- Multi-modal document search |
+| | Prompt Optimization | Prompt Logs | Prompt version control | PromptLayer, LangFuse | - Prompt success tracking<br>- Latency vs. quality balancing<br>- A/B testing of prompt sets |
+| | Cost Governance | Token Logs | LLM cost optimization | LangSmith, Grafana | - Token cost dashboards<br>- Prompt efficiency metrics<br>- Budget alerting |
+| | Guardrails & Safety | Prompts, Outputs | Compliance & PII filters | Guardrails.ai, Regex | - Prompt moderation<br>- Sensitive content blocking<br>- Data privacy guardrails |
+| | Knowledge Refresh | Updated Docs | Scheduled RAG indexing | LangChain Scheduler | - Auto embedding updates<br>- Catalog sync with LLM context<br>- Continuous corpus refresh |
+| **Observability & Ops Intelligence** | System Monitoring | Metrics, Traces | DORA metrics tracking | Prometheus, Grafana | - Deployment frequency<br>- Change failure rate<br>- MTTR / LTC dashboards |
+| | Data Observability | Pipelines, Tables | Data freshness metrics | Monte Carlo, DataHub | - Pipeline SLA tracking<br>- Late feed detection<br>- Quality anomaly alerts |
+| | Model Observability | Drift, Accuracy | ML performance tracking | MLflow, Grafana | - Model F1/AUC visualization<br>- Drift-over-time tracking<br>- Failure case sampling |
+| | LLM Observability | Latency, Accuracy | GenAIOps Monitoring | LangFuse, Helicone | - Response latency metrics<br>- Token cost analytics<br>- Hallucination rate tracking |
+| | AIOps Automation | Incidents, Alerts | Anomaly-based recovery | Dynatrace, Python ML Models | - Auto incident resolution<br>- Root cause summaries<br>- Self-healing orchestration |
+| **Cloud & Infrastructure** | Deployment Automation | Microservices, Models | Multi-cloud CI/CD | ArgoCD, Docker, Kubernetes | - Continuous deployment pipelines<br>- Model container builds<br>- Auto-scaling across clusters |
+| | Scaling & Load Balancing | Services, APIs | Elastic scaling | Istio, KEDA | - Load-based scale-up/down<br>- Region-aware routing<br>- High availability enforcement |
+| | Security & Access | Users, Policies | Role-based access | Keycloak, Vault | - RBAC enforcement<br>- Secret rotation<br>- SSO for dealer and admin |
+| | Edge Deployments | Warehouse Nodes | Offline-first AI | MQTT, Docker Edge Containers | - Edge forecasting<br>- Offline reorder assistant<br>- Sync queue management |
+| | Configuration & Monitoring | Service Metadata | Centralized management | Spring Admin Console | - Global configuration editor<br>- Service registry<br>- Tenant usage overview |
+
+## Summary on Product Overview (Structured) - Product Capability & Use Case Alignment Matrix
+
+This table now provides **end-to-end visibility**:
+- **Business-driven context:** What function each AI serves  
+- **Data-driven foundation:** Which entities fuel each model  
+- **Technology-driven architecture:** The toolchain delivering it  
+- **Use case-driven impact:** Practical business applications across DealerIQ  
+
+This allows enterprise teams to trace **any capability** — from **Dealer Experience → AI/ML pipeline → Data lineage → Platform component**.
 
 ## 1. Product Overview (50 Detailed Capabilities)
 
