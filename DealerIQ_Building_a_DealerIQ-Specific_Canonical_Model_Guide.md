@@ -124,7 +124,7 @@ DealerIQ’s EDM ensures that data remains **consistent, interoperable, and expl
 
 Below is a high-level entity-relationship view of the **DealerIQ Enterprise Data Model**, showing relationships across all domains.
 
-![DealerIQ EDM Diagram](./docs/images/DealerIQ_Core_Entities.png])
+![DealerIQ EDM Diagram](./docs/images/DealerIQ_Core_Entities.png)
 
 ## 8. EDM Verification Checklist
 
