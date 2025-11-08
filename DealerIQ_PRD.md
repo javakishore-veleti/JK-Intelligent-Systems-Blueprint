@@ -43,8 +43,6 @@ A cross-domain view connecting **business functions**, **data assets**, **AI-pow
 | **Feedback Learning Loop** | Dealer Feedback, LLM Responses, Model Drift Alerts | Dealers, AI Trainer, Data Scientist | Closed-Loop Learning System | Dealer interactions | Updated models, improved responses | Feeds user interactions back into retraining and fine-tuning pipelines. |
 | **Admin & Configuration Console** | Service Metadata, API Keys, Config Parameters | Admins, DevOps, Security Leads | Configuration, Monitoring, Multi-Tenant Control | Admin input, pipeline status | Configuration states, usage metrics | Provides centralized administration of configurations and AI orchestration. |
 
----
-
 ## Summary on Enterprise Alignment Matrix
 
 This table captures the **entire DealerIQ ecosystem** mapped by:
