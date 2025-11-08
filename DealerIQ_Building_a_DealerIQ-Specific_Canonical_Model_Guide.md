@@ -126,6 +126,8 @@ Below is a high-level entity-relationship view of the **DealerIQ Enterprise Data
 
 ![DealerIQ EDM Diagram](./docs/images/DealerIQ_Core_Entities.png)
 
+Below is a high-level Business Intelligence Domains view of the **DealerIQ Enterprise Data Model**, showing relationships across all domains.
+
 ![DealerIQ Business_Intelligence Domains](./docs/images/DealerIQ_Business_Intelligence_Domains.png)
 
 
