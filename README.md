@@ -30,9 +30,6 @@ An Intelligence Suite transforms these pain points into connected, intelligent w
 | **File / Folder Name** | **Purpose / Description** | **Category** |
 |--------------------------|---------------------------|----------------|
 | **README.md** | Root overview of the entire project; introduction and vision for *DealerIQ – Intelligence Suite*. | Documentation |
-| **LICENSE** | License file specifying usage permissions and terms for the repository. | Governance |
-| **.gitignore** | Configuration file specifying which files/folders Git should ignore. | Configuration |
-| **docs/images/** | Folder containing all architecture diagrams, infographics, and reference visuals used in Markdown files. | Assets |
 | **DealerIQ_PRD.md** | Comprehensive Product Requirements Document (PRD) for DealerIQ including business units, ML/GenAI use cases, and architecture. | Product Design |
 | **DealerIQ_DealerIQ_Development_Kickoff_Guide.md** | Detailed development guide describing architecture, microservices, portals, and implementation roadmap. | Development |
 | **DealerIQ_Development_Kick-off_Guide.md** | Earlier or simplified version of the development kickoff guide; retained for version comparison. | Development |
