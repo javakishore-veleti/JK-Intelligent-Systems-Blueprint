@@ -1,4 +1,4 @@
-# 🧠 DealerIQ ML / GenAI Notebooks Directory  
+# DealerIQ ML / GenAI Notebooks Directory  
 ### Intelligence Suite: DealerIQ
 
 ## Overview
