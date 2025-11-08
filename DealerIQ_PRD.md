@@ -59,6 +59,50 @@ DealerIQ’s design ensures **tight coupling between data, intelligence, and ope
 making it a **data-driven enterprise AI system** with measurable value across all stakeholders.
 
 
+# DealerIQ – Machine Learning (ML) Use Case Catalog
+
+| **Business Unit** | **Key Data Sets** | **Key Personas** | **Business Service(s)** | **Input** | **Output** | **Use Case Description** |
+|--------------------|------------------|------------------|--------------------------|------------|-------------|---------------------------|
+| **Demand Forecasting** | Historical Sales, Dealer Activity, Inventory Levels, Promotions | Data Scientists, Regional Managers | Predictive Demand Modeling | Sales orders, inventory data, dealer metrics | SKU-level demand forecasts | Predicts product demand by dealer, region, and season to optimize inventory and production planning. |
+| **Inventory Optimization** | Stock Levels, Reorder Thresholds, Lead Times | Supply Chain Analysts, Warehouse Admins | Reorder Point Optimization | Real-time stock data, historical sales | Optimal reorder levels and timing | Suggests the best reorder point for each SKU using time-series and regression models. |
+| **Dynamic Pricing** | Price History, Dealer Segments, Competitor Prices, Promotions | Pricing Analysts, HQ Managers | Price Elasticity Modeling | SKU-level pricing, historical sales | Recommended optimal price | Learns price elasticity and recommends dynamic pricing per region and dealer segment. |
+| **Promotion ROI Forecasting** | Campaign Data, Sales Uplift, Dealer Segmentation | Marketing Managers | Promotion Effectiveness Analysis | Campaign metadata, sales post-campaign | ROI prediction and optimization | Predicts the ROI of marketing campaigns and suggests best-performing promotion types. |
+| **Dealer Segmentation** | Dealer Master, Sales KPIs, Payment History | Regional Managers, BI Analysts | Dealer Clustering & Profiling | Dealer metrics and transactions | Cluster labels (High, Medium, Low value) | Groups dealers by performance, region, and behavior for targeted engagement strategies. |
+| **Dealer Churn Prediction** | Dealer Engagement, Orders, Support Tickets | CRM Managers, Regional Managers | Churn Risk Analysis | Dealer behavior, interaction logs | Churn probability score | Predicts likelihood of dealer disengagement or inactivity based on behavioral features. |
+| **Sales Forecasting** | Orders, Promotions, Dealer Profiles, Seasonal Trends | Finance Analysts, Demand Planners | Time-Series Sales Forecasting | Historical orders and prices | Sales projections by region and SKU | Provides short-term and long-term sales forecasts for financial planning. |
+| **Warranty & Support Analytics** | Ticket Logs, Product Models, Issue Categories | Support Analysts, Quality Engineers | Issue Classification & Prediction | Ticket descriptions, product data | Predicted category and resolution | Classifies dealer support issues and predicts resolution time using NLP models. |
+| **Product Recommendation Engine** | Product Attributes, Order History, Dealer Preferences | Dealers, Sales Teams | Cross-Sell / Up-Sell Recommender | Dealer purchase history | Recommended complementary products | Suggests related products or accessories to increase basket size and sales. |
+| **Dealer Lifetime Value (DLV)** | Transaction Logs, Dealer Engagement, Revenue History | Finance & Strategy Teams | Predictive Lifetime Value | Dealer transactions, revenue trends | Projected DLV score | Predicts the long-term financial value of each dealer to guide retention strategies. |
+| **Stockout Risk Prediction** | Inventory Movements, Lead Time, Demand Variability | Inventory Planners | Inventory Risk Analytics | Demand forecasts, supplier lead times | Probability of stockout | Anticipates SKU stockouts and alerts supply chain before they occur. |
+| **Product Substitution Matching** | Product Specs, Compatibility Graphs, Inventory Data | Product Managers, Dealers | Similarity & Compatibility Modeling | Product attributes, compatibility rules | Substitution suggestions | Uses similarity models to recommend compatible or alternative parts when items are unavailable. |
+| **Dealer Sentiment Analysis (ML-based)** | Chat Logs, Feedback Text, Survey Results | Customer Success Teams | Sentiment & Emotion Detection | Dealer communication data | Sentiment label (Positive, Neutral, Negative) | Analyzes dealer feedback sentiment to gauge satisfaction and detect dissatisfaction early. |
+| **Promotion Personalization** | Dealer Purchase History, Demographics, Engagement Scores | Marketing Analysts | Personalized Offer Targeting | Dealer attributes, campaign data | Dealer-specific offer recommendations | Predicts which promotions will most likely engage each dealer. |
+| **Payment Default Prediction** | Dealer Payment History, Credit Terms, Transaction Patterns | Finance Analysts | Risk Scoring Model | Payment records, dealer tier | Default risk score | Predicts the likelihood of delayed or missed dealer payments. |
+| **Parts Demand Correlation** | Product Assemblies, Sales Logs, Maintenance Data | Supply Chain Managers | Part Usage Forecasting | Bill of materials, repair logs | Correlated part demand predictions | Learns dependency between related parts to forecast secondary demand. |
+| **Warehouse Optimization** | Inventory Data, Transport Costs, Order Locations | Operations Managers | Multi-Objective Stock Allocation | Stock and route data | Optimal warehouse allocation plan | Recommends warehouse stock distribution minimizing cost and delay. |
+| **Dealer Engagement Scoring** | Dealer Logins, Queries, Order Volume, Feedback | CRM Managers | Engagement Index Modeling | Dealer behavioral signals | Engagement score (0–100) | Predicts engagement level of each dealer to prioritize outreach and support. |
+| **Return & Refund Prediction** | Order Data, Product Category, Region, Feedback | QA Teams, Finance | Product Return Risk Model | Transaction and feedback data | Return likelihood probability | Identifies products or dealers prone to high return rates. |
+| **Forecast Error Calibration** | Forecast Results, Actuals, Model Metadata | Data Scientists, ML Engineers | Model Bias Correction | Forecast output vs actuals | Bias-adjusted forecast | Continuously improves model accuracy by learning from prediction errors. |
+| **Dealer Onboarding Scoring** | Application Data, Territory, Initial Activity | Sales Admins | Dealer Success Prediction | Registration data, early activity | Onboarding success probability | Predicts the success likelihood of new dealers based on initial behavior patterns. |
+| **Inventory Anomaly Detection** | Inventory Logs, Stock Movements | DataOps / AIOps Team | Anomaly Monitoring | Streaming stock data | Outlier alerts | Detects abnormal stock fluctuations using unsupervised ML models. |
+| **Revenue Forecasting** | Financial Transactions, Regional KPIs | Finance Team, Executives | Predictive Revenue Modeling | Historical revenue data | Quarterly/annual revenue forecast | Provides revenue projections aligned with regional performance trends. |
+| **Delivery Delay Prediction** | Shipment Data, Supplier Timelines | Logistics Managers | Delivery Risk Prediction | Shipment logs, supplier SLAs | Delay probability | Predicts likelihood of shipment delays to optimize communication with dealers. |
+| **Dealer Support Load Prediction** | Support Ticket Data, Dealer Activity | Support Center Managers | Predictive Workload Planning | Ticket inflow trends | Next-week workload forecast | Forecasts dealer support demand for staffing and resource optimization. |
+| **Model Drift Monitoring (Meta-ML)** | Model Inputs, Feature Statistics | MLOps Engineers | Drift Detection & Alerting | Real-time feature metrics | Drift detection alert | Uses statistical drift models to detect when retraining is needed. |
+
+## Summary on ML Use Cases
+
+DealerIQ’s ML use cases cover the full operational spectrum:
+- **Predictive Intelligence:** Forecasting, pricing, demand, and revenue.
+- **Optimization:** Inventory, warehouse, and promotion strategies.
+- **Behavioral Analytics:** Dealer segmentation, churn, engagement, sentiment.
+- **Quality & Risk:** Returns, defaults, anomalies, and performance calibration.
+- **Operational ML:** Drift detection, retraining, and feedback-driven model refinement.
+
+Together, they form the **analytical backbone** of the DealerIQ Intelligence Suite,  
+powering real-time decisions, predictive automation, and self-learning business optimization.
+
+
 ## 1. Product Overview (50 Detailed Capabilities)
 
 1. Centralized, AI-powered platform for product, pricing, and inventory visibility.  
