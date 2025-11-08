@@ -46,7 +46,7 @@ An Intelligence Suite transforms these pain points into connected, intelligent w
 
 | **Category** | **Files** | **Focus** |
 |---------------|-----------|------------|
-| **Core Documentation** | `README.md`, `LICENSE`, `.gitignore` | Repository governance and overview |
+| **Core Documentation** | `README.md`,  | Repository overview and governance |
 | **Product Design** | `DealerIQ_PRD.md` | Business, domain, and AI product definition |
 | **Development & Architecture** | `DealerIQ_DealerIQ_Development_Kickoff_Guide.md`, `DealerIQ_Development_Kick-off_Guide.md`, `DealerIQ_Event-Driven_Architecture_EDA.md` | Implementation roadmap and microservices structure |
 | **AI / ML / GenAI Strategy** | `DealerIQ_AI_ML_GenAI_Real-Time_Focus.md`, `DealerIQ_Fine-Tuning_Embedding_Strategy.md`, `DealerIQ_MLOps_AIOps_DataOps_Strategy.md` | Intelligence layer design and operational automation |
