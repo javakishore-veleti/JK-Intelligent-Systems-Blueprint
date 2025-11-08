@@ -33,7 +33,7 @@ An Intelligence Suite transforms these pain points into connected, intelligent w
 | **Learning & Development (LMS Augmentation)** | Trainers, HR Teams, Employees | - Convert SOPs and manuals into adaptive learning content.<br>- Auto-generate quizzes and explanations.<br>- Deliver contextual training by role. | - ↓ 40% onboarding time.<br>- ↑ 50% training completion.<br>- ↑ 90% quiz accuracy. |
 | **Manufacturing / R&D Knowledge Systems** | Engineers, Designers, Scientists | - Enable AI-assisted hypothesis generation and experiment insights.<br>- Retrieve prior data and results semantically.<br>- Prevent duplicate tests. | - ↓ 30% design cycle time.<br>- ↓ 50% redundant testing.<br>- ↑ 25% design reuse. |
 | **Compliance & Legal Intelligence** | Legal Officers, Risk Managers, Auditors | - Automate compliance validation and version tracking.<br>- Summarize regulatory standards (ISO, FDA, GDPR).<br>- Maintain audit traceability. | - ↓ 60% audit prep time.<br>- ↑ 35% policy accuracy.<br>- 100% audit trail. |
-| **Executive Analytics & Intelligence** | Executives, Strategy Heads, Data Officers | - **Integrate with existing business systems (ERP, CRM, Finance, HR, and Operations) to deliver real-time, AI-driven executive insights.**<br>- **Unify structured and unstructured data (reports, KPIs, forecasts) into a single conversational intelligence layer.**<br>- **Provide predictive and narrative analytics to support strategic decision-making — independent of other JK modules.** | - ↓ 40% decision latency.<br>- Real-time KPI dashboards.<br>- 100% visibility into enterprise performance and ROI. |
+| **Executive Analytics & Intelligence** | Executives, Strategy Heads, Data Officers | - **Integrate with existing business systems (ERP, CRM, Finance, HR, and Operations) to deliver real-time, AI-driven executive insights.**<br>- **Unify structured and unstructured data (reports, KPIs, forecasts) into a single conversational intelligence layer.**<br>- **Provide predictive and narrative analytics to support strategic decision-making — independent of other intelligence suite modules.** | - ↓ 40% decision latency.<br>- Real-time KPI dashboards.<br>- 100% visibility into enterprise performance and ROI. |
 
 ## 4 Intelligence Suite Product Portfolio
 
@@ -47,7 +47,7 @@ An Intelligence Suite transforms these pain points into connected, intelligent w
 | **ComplianceGuard** | Legal & Compliance | Compliance Officers, Auditors | Automates regulatory monitoring, contract review, and audit documentation. |
 | **Insight360** | Executive Analytics & Intelligence | Executives, Data Officers | Independent, AI-powered analytics engine that connects to ERP, CRM, and BI systems to provide conversational insights, predictive analytics, and performance summaries. |
 
-## 5 - Field Sales Domain Detail (JK AgentAssist Key Features)
+## 5 - Field Sales Domain Detail (Intelligence Suite AgentAssist Key Features)
 
 | **Feature** | **Description** | **Business Value** |
 |--------------|-----------------|--------------------|
