@@ -16,8 +16,6 @@ This document is **not a finalized or released product**, but rather a **compreh
 
 A cross-domain view connecting **business functions**, **data assets**, **AI-powered services**, and **personas** across the Intelligence Suite.
 
----
-
 | **Business Unit** | **Key Data Sets** | **Key Personas (Customer / Admin / Partner / Supplier)** | **Business Service(s)** | **Input** | **Output** | **Use Case Description** |
 |--------------------|------------------|-----------------------------------------------------------|--------------------------|------------|-------------|---------------------------|
 | **Dealer Management** | Dealer Master, Dealer Region, Dealer Activity Logs, CRM Integration Data | Dealers, Regional Managers, HQ Admins | Dealer Onboarding, Profile Management, Engagement Tracking | Dealer registration forms, CRM feed | Dealer profiles, engagement dashboards | Centralizes dealer information and lifecycle tracking; monitors dealer activity and loyalty. |
