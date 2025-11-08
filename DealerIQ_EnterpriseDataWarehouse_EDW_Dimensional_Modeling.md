@@ -16,6 +16,8 @@ The EDW follows a **Dimensional Modeling** approach (Kimball-style) with:
 - **Fact Tables** for detailed measurable business events.  
 - **Analytical Data Marts** for forecasting, recommendations, and executive insights.
 
+![DealerIQ Enterprise Data Warehouse EDW](./docs/images/DealerIQ_EnterpriseDataWarehouse_EDW_Dimensional_Modeling.png)
+
 ## EDW Architecture Overview
 
 | **Layer** | **Purpose** | **Technologies** |
