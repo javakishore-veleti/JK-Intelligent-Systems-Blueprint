@@ -13,6 +13,8 @@ It unifies telemetry from:
 
 This ensures end-to-end visibility, from **dealer interactions → model inference → retraining → redeployment**.
 
+![DealerIQ Observability](./docs/images/DealerIQ_Observability.png)
+
 ## Core DORA Metrics Adapted for DealerIQ
 
 | **DORA Metric** | **DealerIQ-Specific Interpretation** | **Key Observability KPIs / Sources** |
