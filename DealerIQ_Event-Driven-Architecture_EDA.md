@@ -5,6 +5,8 @@
 DealerIQ uses an **event-driven, microservice-based architecture** that unifies transactional operations and AI/ML/GenAI pipelines through a shared event bus.  
 Events enable **real-time reaction**, **loose coupling**, and **continuous learning** across all intelligence and operational layers.
 
+![DealerIQ Event Driven Architecture](./docs/images/DealerIQ_EventDrivenArchitecture.png)
+
 ## Event Bus & Infrastructure
 
 | **Component** | **Purpose** | **Technology Stack** |
