@@ -3,8 +3,6 @@
 
 **Version:** 1.0  
 
----
-
 ## Disclaimer
 
 This document presents **DealerIQ**, a flagship conceptual product within the *Intelligence Suite* initiative.  
@@ -13,8 +11,6 @@ It is a **forward-looking innovation framework** designed to illustrate how AI, 
 DealerIQ combines **Angular-based intelligent UX**, **microservices**, **vector & graph data intelligence**, **fine-tuned LLMs**, and **enterprise-grade MLOps/AIOps/GenAIOps pipelines** to deliver next-generation dealer enablement.
 
 This document is **not a finalized or released product**, but rather a **comprehensive reference architecture and requirement framework** for research, prototyping, and investment evaluation.
-
----
 
 ## 1. Product Overview (50 Detailed Capabilities)
 
