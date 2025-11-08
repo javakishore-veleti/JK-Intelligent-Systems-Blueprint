@@ -35,5 +35,42 @@ An Intelligence Suite transforms these pain points into connected, intelligent w
 | **Compliance & Legal Intelligence** | Legal Officers, Risk Managers, Auditors | - Automate compliance validation and version tracking.<br>- Summarize regulatory standards (ISO, FDA, GDPR).<br>- Maintain audit traceability. | - ↓ 60% audit prep time.<br>- ↑ 35% policy accuracy.<br>- 100% audit trail. |
 | **Executive Analytics & Intelligence** | Executives, Strategy Heads, Data Officers | - **Integrate with existing business systems (ERP, CRM, Finance, HR, and Operations) to deliver real-time, AI-driven executive insights.**<br>- **Unify structured and unstructured data (reports, KPIs, forecasts) into a single conversational intelligence layer.**<br>- **Provide predictive and narrative analytics to support strategic decision-making — independent of other JK modules.** | - ↓ 40% decision latency.<br>- Real-time KPI dashboards.<br>- 100% visibility into enterprise performance and ROI. |
 
+## 4 Intelligence Suite Product Portfolio
+
+| **Product** | **Business Domain** | **Primary Users** | **Core Business Value** |
+|-----------------|----------------------|--------------------|--------------------------|
+| **JDealerIQ** | Dealers & Distribution | Dealers, Channel Managers | Unified product, pricing, and inventory portal with AI-assisted discovery and updates. |
+| **AgentAssist** | Field Sales | Field Sales Agents, Territory Managers | AI copilot for machinery sales — instant answers on compatibility, pricing, and availability, with on-site quoting. |
+| **SupportPro** | Customer Support | Support Engineers, QA Managers | Intelligent service knowledge base and AI ticket assistant for faster issue resolution. |
+| **LearnX** | Learning & Development | Trainers, HR, New Employees | Adaptive learning platform built from SOPs and manuals for contextual, role-based onboarding. |
+| **R&D Studio** | Research & Innovation | Engineers, Scientists | Accelerates discovery with AI-driven hypothesis generation, document extraction, and data synthesis. |
+| **ComplianceGuard** | Legal & Compliance | Compliance Officers, Auditors | Automates regulatory monitoring, contract review, and audit documentation. |
+| **Insight360** | Executive Analytics & Intelligence | Executives, Data Officers | Independent, AI-powered analytics engine that connects to ERP, CRM, and BI systems to provide conversational insights, predictive analytics, and performance summaries. |
+
+## 5 - Field Sales Domain Detail (JK AgentAssist Key Features)
+
+| **Feature** | **Description** | **Business Value** |
+|--------------|-----------------|--------------------|
+| Conversational Field Copilot | Voice/text interface for product specs, compatibility, and warranty lookups. | Reduces lookup time from minutes to seconds. |
+| Smart Product & Parts Navigator | Unified semantic search across ERP, BOM, and manuals. | Improves agent efficiency and accuracy. |
+| Instant Quote Generator | Auto-creates accurate quotes with current pricing and delivery dates. | Reduces manual quote turnaround by 50%. |
+| Cross-Sell & Compatibility Recommender | Suggests add-ons and upgrades using sales history and product data. | Increases revenue from accessories. |
+| Warranty & Policy Advisor | Provides compliance-safe warranty and pricing guidance. | Reduces post-sale disputes. |
+| Offline Mode | Enables field access without internet connectivity. | 100% field uptime. |
+| Regional Sales Dashboard | Monitors agent activity, product trends, and missed opportunities. | Enables smarter territory planning. |
+
+## 6 - Core AI Foundation
+
+| **Component** | **Purpose** |
+|----------------|-------------|
+| LLM Orchestration Layer | Routes requests between GPT-5, Claude, Gemini, HuggingFace, or fine-tuned domain models. |
+| Hybrid Knowledge Layer (Vector + Graph) | Combines semantic and relational knowledge for fast retrieval and context reasoning. |
+| Fine-Tuning Studio | Customizes models on internal data (manuals, catalogs, service logs). |
+| Retrieval-Augmented Generation (RAG) | Factual, cited responses from enterprise documents and systems. |
+| Governance & Audit Engine | Logs every AI interaction for compliance and traceability. |
+| Insight Analytics Layer | Aggregates performance and usage metrics across products. |
+| Edge Sync Engine | Enables offline caching and synchronization for field devices. |
+
+
 
 
