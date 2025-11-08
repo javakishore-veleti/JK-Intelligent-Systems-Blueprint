@@ -24,7 +24,7 @@ Enterprises in machinery, manufacturing, and parts industries face:
 
 An Intelligence Suite transforms these pain points into connected, intelligent workflows - enabling real-time discovery, learning, and decision-making across departments.
 
-#3 - Domain-Specific Business Goals & Objectives
+## 3 - Domain-Specific Business Goals & Objectives
 | **Domain** | **Actors** | **Business Goals** | **KPIs / Outcomes** |
 |-------------|-------------|--------------------|----------------------|
 | **Dealer & Distribution Intelligence** | Dealers, Channel Partners, Regional Managers | - Centralize product, inventory, and pricing data.<br>- Enable instant product comparisons and stock visibility.<br>- Provide personalized dealer updates (promotions, technical notices). | - ↓ 60% product lookup time.<br>- ↑ 30% dealer engagement.<br>- ↓ 25% manual coordination with HQ. |
