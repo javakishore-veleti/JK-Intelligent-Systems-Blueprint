@@ -1,4 +1,4 @@
-# ⚙️ MLOps / AIOps / DataOps Strategy – Intelligence Suite: DealerIQ
+# MLOps / AIOps / DataOps Strategy – Intelligence Suite: DealerIQ
 
 ---
 
