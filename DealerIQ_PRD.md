@@ -12,6 +12,59 @@ DealerIQ combines **Angular-based intelligent UX**, **microservices**, **vector 
 
 This document is **not a finalized or released product**, but rather a **comprehensive reference architecture and requirement framework** for research, prototyping, and investment evaluation.
 
+# Table of Contents – Intelligence Suite: DealerIQ (PRD v1.0)
+
+1. **Disclaimer**
+
+2. **Understanding the Dealer Ecosystem**
+   - Who is a Dealer?
+   - Dealer Ecosystem Overview
+   - Why Dealers Need an Intelligence Suite
+   - DealerIQ Business Unit Framework Overview
+   - Summary
+
+3. **DealerIQ Enterprise Alignment Matrix**
+   - Business Units and AI-Powered Service Alignment
+   - Summary on Enterprise Alignment Matrix
+
+4. **DealerIQ – Machine Learning (ML) Use Case Catalog**
+   - Core Predictive Intelligence Use Cases
+   - Optimization & Risk Models
+   - Operational ML & Drift Detection
+   - Summary on ML Use Cases
+
+5. **DealerIQ – Generative AI (GenAI) Use Case Catalog**
+   - Conversational & Knowledge Use Cases
+   - Content Generation & Automation Use Cases
+   - Personalization & Governance Use Cases
+   - Summary on GenAI Use Cases
+
+6. **DealerIQ – Generative AI Architecture Mapping**
+   - Use Case–to–Technology Correlation
+   - GenAI Capability Breakdown by Technical Method
+   - DealerIQ GenAI Platform Components
+   - Summary on Generative AI Architecture
+
+7. **DealerIQ – Product Overview (Structured)**
+   - Product Capability & Use Case Alignment Matrix
+   - Summary on Product Overview
+
+8. **Product Overview (50 Detailed Capabilities)**
+
+9. **Angular Front-End Design (50 Key Features & Requirements)**
+
+10. **DataOps + MLOps + GenAIOps Integration (50 Functional & Architectural Requirements)**
+
+11. **LLM Lifecycle & Architecture (50 Detailed Elements)**
+
+12. **Observability & Performance (50 Metrics, Tools & Goals)**
+
+13. **Key Flow Summary**
+
+14. **System Behavior Summary**
+
+15. **Comprehensive Product Summary**
+
 ## Understanding the Dealer Ecosystem
 
 ### Who is a Dealer?
