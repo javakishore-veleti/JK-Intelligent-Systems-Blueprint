@@ -34,6 +34,8 @@ The **DealerIQ Intelligence Suite** is designed to **empower dealers and distrib
 | **Supplier / OEM Partner** | Supplies materials or parts to dealers | Fulfillment, product updates | Fragmented demand visibility | Real-time demand signals from dealers |
 | **Support / Service Agent** | Handles warranty and post-sale support | Ticket management, issue resolution | Manual document lookup, delayed triage | LLM-based issue summarization, automatic solution retrieval |
 
+![DealerIQ Observability](./docs/images/DealerIQ_Dealer_LifeCycle_Journey.png)
+
 ### Why Dealers Need an Intelligence Suite
 
 | **Dealer Business Challenge** | **Traditional Limitation** | **AI / ML / GenAI Solution (DealerIQ)** |
