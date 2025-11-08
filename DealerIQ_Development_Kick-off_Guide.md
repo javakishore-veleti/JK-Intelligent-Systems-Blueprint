@@ -13,6 +13,8 @@ DealerIQ integrates:
 
 This guide provides a roadmap to set up the environment, organize repositories, and execute sprints for building the DealerIQ ecosystem.
 
+![DealerIQ Observability](./docs/images/DealerIQ_Development_Guide.png)
+
 ## 1. Repository & Project Structure
 ```text
 intelligence-suite-dealeriq/
