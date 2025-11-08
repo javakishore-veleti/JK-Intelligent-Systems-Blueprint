@@ -7,7 +7,7 @@ It defines every core business entity, relationship, and data standard across de
 
 DealerIQ’s EDM ensures that data remains **consistent, interoperable, and explainable** across all domains — from transactional APIs to ML models and GenAI pipelines.
 
-## 🧱 1. EDM Purpose
+## 1. EDM Purpose
 
 - Create a **unified data language** across all DealerIQ microservices.  
 - Standardize schemas for integration with **ERP, CRM, OEM, and supplier systems**.  
