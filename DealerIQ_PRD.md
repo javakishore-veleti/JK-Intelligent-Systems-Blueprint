@@ -65,8 +65,6 @@ This document is **not a finalized or released product**, but rather a **compreh
 49. Centralized admin console for configuration and monitoring.  
 50. Configurable AI orchestration layer (OpenAI, Anthropic, Mistral, in-house LLMs).
 
----
-
 ## 2. Angular Front-End Design (50 Key Features & Requirements)
 
 1. Built with **Angular 18+**, using modular design patterns.  
@@ -119,8 +117,6 @@ This document is **not a finalized or released product**, but rather a **compreh
 48. Easy integration of **third-party components** via Angular Elements.  
 49. Real-time **token usage display** for admin users.  
 50. Deployment-ready via CI/CD (Dockerized Angular builds).
-
----
 
 ## 3. DataOps + MLOps + GenAIOps Integration (50 Functional & Architectural Requirements)
 
@@ -175,8 +171,6 @@ This document is **not a finalized or released product**, but rather a **compreh
 49. Integration with DataOps catalog.  
 50. Closed-loop improvement system (feedback → retrain → redeploy).
 
----
-
 ## 4. LLM Lifecycle & Architecture (50 Detailed Elements)
 
 1. Central LLM Orchestration Layer.  
@@ -230,8 +224,6 @@ This document is **not a finalized or released product**, but rather a **compreh
 49. Document-grounded reasoning using RAG pipelines.  
 50. Explainability and feedback metadata logging.
 
----
-
 ## 5. Observability & Performance (50 Metrics, Tools & Goals)
 
 1. System uptime (target 99.9%).  
@@ -284,8 +276,6 @@ This document is **not a finalized or released product**, but rather a **compreh
 48. Model promotion latency (train → deploy).  
 49. KPI correlation visualization (Grafana).  
 50. Continuous observability pipeline via OpenTelemetry.
-
----
 
 ## Summary
 
