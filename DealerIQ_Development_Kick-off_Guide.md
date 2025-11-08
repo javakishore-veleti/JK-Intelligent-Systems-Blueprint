@@ -14,7 +14,7 @@ DealerIQ integrates:
 This guide provides a roadmap to set up the environment, organize repositories, and execute sprints for building the DealerIQ ecosystem.
 
 ## 1. Repository & Project Structure
-
+```text
 intelligence-suite-dealeriq/
 │
 ├── README.md
@@ -42,6 +42,7 @@ intelligence-suite-dealeriq/
 │ ├── k8s/
 │ └── ci-cd/
 └── /docs/ # Documentation and Architecture
+```
 
 ## 2. Front-End Architecture (Angular Dealer Portal)
 
