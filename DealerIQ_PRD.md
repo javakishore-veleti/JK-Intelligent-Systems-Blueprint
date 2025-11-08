@@ -102,6 +102,53 @@ DealerIQ’s ML use cases cover the full operational spectrum:
 Together, they form the **analytical backbone** of the DealerIQ Intelligence Suite,  
 powering real-time decisions, predictive automation, and self-learning business optimization.
 
+# DealerIQ – Generative AI (GenAI) Use Case Catalog
+
+| **Business Unit** | **Key Data Sets** | **Key Personas** | **Business Service(s)** | **Input** | **Output** | **Use Case Description** |
+|--------------------|------------------|------------------|--------------------------|------------|-------------|---------------------------|
+| **Dealer Conversational Assistant** | Product Manuals, Dealer FAQs, Chat Logs | Dealers, Field Sales, Support Agents | Conversational AI Support | Dealer queries in natural language | Contextual answers and guidance | Provides instant responses to product, pricing, and inventory questions using fine-tuned LLMs and RAG. |
+| **Product Information Summarization** | Product Specs, Technical Manuals, OEM Docs | Dealers, Sales Engineers | Technical Summary Generation | Product PDFs or specifications | AI-generated summaries | Summarizes long technical manuals into short, dealer-friendly summaries. |
+| **Dynamic Quote Generator** | Pricing Data, Discount Rules, Dealer Profiles | Dealers, Pricing Analysts | AI Quote Composer | Dealer quote request | Personalized quote document | Generates itemized quotes using dealer’s discount rules and inventory status. |
+| **Promotion Message Generation** | Campaign Templates, Dealer Segments, ROI Data | Marketing Managers | Personalized Campaign Creation | Campaign metadata, target list | Customized promotion text & visuals | Generates personalized promotional messages per dealer or region using LLMs. |
+| **Support Ticket Summarization** | Support Logs, Resolution Steps | Support Agents, Managers | Ticket Summarizer | Support conversation history | Short summary of resolution | Summarizes multi-turn chat or email support tickets into actionable insights. |
+| **Email & Communication Drafting** | Dealer Interactions, Templates, Campaign History | Sales Teams, Regional Managers | AI Draft Assistant | Context (dealer name, topic) | Drafted personalized email | Generates outreach or follow-up emails tailored to each dealer’s history. |
+| **Product Compatibility Reasoning (RAG + Graph)** | Product Catalog, Compatibility Graph, SKUs | Dealers, Product Engineers | Compatibility Q&A | Query: “Can part A replace part B?” | Compatibility answer with reasoning | Uses graph-enhanced RAG pipeline to reason about cross-brand part compatibility. |
+| **Knowledge Base Creation (Auto-Docs)** | Manuals, SOPs, FAQs | Support Admins, Knowledge Engineers | Knowledge Article Generation | Structured / unstructured input | LLM-generated knowledge entries | Automatically generates searchable knowledge base articles from internal documents. |
+| **Visual Product Description Generator** | Product Images, Specs | Product Managers, Marketing | Image-to-Text Descriptions | Product photo and metadata | Human-like product description | Converts images and structured metadata into natural marketing descriptions. |
+| **Dealer Training Assistant** | Training Docs, Videos, FAQs | Dealers, Training Leads | AI Learning Copilot | Dealer questions or learning goals | Training response or module recommendation | Interactive AI learning companion that answers “how-to” dealer questions. |
+| **Dealer Sentiment Narrative Builder** | Feedback Text, Chat Logs, Surveys | CX Managers, Analysts | Sentiment Insight Narration | Feedback dataset | Human-readable sentiment summary | Generates narrative summaries of sentiment analysis trends over time. |
+| **GenAI Report Builder** | BI Metrics, KPIs, Sales Data | Regional Managers, Executives | Report Generator (NL→BI) | Query: “Summarize Q1 sales for region X” | Auto-generated BI report | Converts analytical queries into formatted reports and executive summaries. |
+| **Product Comparison Narrative** | Product Catalog, Feature Tables | Dealers, Sales Reps | Comparison Assistant | List of SKUs or products | Narrative comparison | Generates detailed product comparisons using multi-document reasoning. |
+| **Warranty Claim Summarizer** | Claim Logs, Attachments | Warranty Managers, QA Analysts | Claim Summary Generator | Claim data, attachments | Structured claim summary | Reads and summarizes warranty claims with risk and resolution context. |
+| **Knowledge Graph Question Answering** | Graph Embeddings, Product Relationships | Dealers, Engineers | Graph-Grounded QA | Query and context | Structured answer with trace | Combines Neo4j graph + LLM to deliver traceable reasoning for complex queries. |
+| **Multi-Modal RAG (Text + Image)** | Product Images, Manuals, Inventory Data | Dealers, Field Engineers | Visual QA Assistant | Image or question | Textual answer and part ID | Answers dealer image queries by combining visual and text reasoning. |
+| **Dealer Summary Generation** | Dealer Activity, Sales, Engagement Metrics | Regional Managers | AI Performance Summarizer | Dealer metrics and logs | Summarized dealer performance report | Automatically creates weekly summaries for each dealer with highlights and trends. |
+| **AI Meeting / Call Note Generator** | Audio Calls, Meeting Transcripts | Sales Teams, Managers | Call Summarization | Audio transcript | Meeting notes and action items | Transcribes and summarizes dealer meetings, highlighting follow-ups. |
+| **Prompt Versioning & Evaluation** | Prompt Logs, Dealer Feedback | GenAI Engineers, AI Admins | Prompt Lifecycle Management | Prompt inputs and outcomes | Prompt evaluation scores | Evaluates and optimizes prompts for accuracy, factuality, and cost efficiency. |
+| **LLM Fine-Tuning & Domain Adaptation** | Chat Logs, Manuals, Support Conversations | AI Engineers, Data Scientists | DealerIQ-LLM Fine-Tuning | Domain corpus | Fine-tuned DealerIQ model | Customizes LLMs for domain-specific terminology and reasoning. |
+| **Feedback-Informed Response Optimization (RLHF)** | Dealer Feedback, LLM Outputs | AI Engineers, Annotators | RLHF Training Loop | Feedback and model outputs | Improved LLM policy weights | Reinforces AI responses based on dealer feedback for improved accuracy. |
+| **Voice Interaction Assistant** | Speech Data, Transcriptions | Dealers, Field Engineers | Voice-to-LLM Pipeline | Spoken query | Text or speech answer | Converts spoken questions into AI responses for hands-free dealer assistance. |
+| **Code & Schema Generator** | EDM / API Metadata, Model Schema | Developers, Architects | Auto-Documentation & Code Generation | EDM schema definitions | Generated API docs and SDKs | Generates code, schema mappings, or API documentation automatically. |
+| **Safety & Guardrails Enforcement** | Prompt Templates, Guardrail Rules | Security Teams, Compliance Officers | AI Moderation and Policy Filtering | Prompt input, model output | Sanitized / compliant response | Ensures compliance, filters PII and inappropriate content in AI responses. |
+| **Multi-Lingual Translation Layer** | Text Data, Dealer Language Preferences | Dealers, Regional Managers | AI Translator | Dealer query or text | Translated response | Supports multi-lingual interaction in dealer portals (English, Spanish, German, etc.). |
+| **Product Launch Content Generation** | Product Metadata, Images | Marketing Teams, OEM Partners | Launch Campaign Generator | Product data feed | Blogs, ads, brochures | Generates marketing and dealer-facing content for new product launches. |
+| **GenAI Cost Optimization** | Token Logs, API Calls, Usage Metrics | AI Ops, Finance | LLM Cost Management Service | Usage telemetry | Cost efficiency reports | Tracks token usage, latency, and cost to optimize LLM routing policies. |
+| **Adaptive Dealer Persona Engine** | Dealer Profiles, Historical Interactions | AI Orchestrator, UX Designers | Persona-Based Response Tuning | Dealer history and preferences | Persona-conditioned AI responses | Adapts LLM tone and detail based on dealer persona (technical, sales, service). |
+| **Knowledge Refresh Automation** | New Manuals, Updated Catalogs | AI Trainers, DataOps | Continuous Learning Pipelines | Updated corpora | Refreshed embeddings and indexes | Automates periodic RAG and embedding updates to keep AI knowledge fresh. |
+| **Anomaly Explanation Generator** | Drift Alerts, Model Metrics | MLOps, AIOps Teams | Root Cause Narrative Builder | Drift or error event logs | AI-generated root cause report | Uses LLMs to explain anomalies detected by ML/AIOps systems in human terms. |
+| **Dealer Q&A Dataset Generator (Synthetic)** | FAQs, Manuals, Chat Transcripts | AI Trainers, Data Engineers | Synthetic Data Creation | Domain corpus | Synthetic Q&A pairs | Generates synthetic dealer Q&A pairs for safe fine-tuning. |
+
+## Summary on Gen AI Use Cases
+
+DealerIQ’s **Generative AI Use Cases** combine:
+- **Conversational Intelligence** (Dealer Assistants, Technical Q&A)
+- **Content Generation** (Summaries, Promotions, Documentation)
+- **Automation** (Reports, Claims, Insights)
+- **Personalization** (Dealer Personas, Voice, Language)
+- **Governance & Optimization** (Prompt Evaluation, RLHF, Cost Control)
+
+Together, these use cases create a **human-like, context-aware dealer ecosystem** where GenAI augments every business interaction —  
+from field sales to support, marketing, and executive insights.
 
 ## 1. Product Overview (50 Detailed Capabilities)
 
