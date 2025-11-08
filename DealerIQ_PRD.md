@@ -148,6 +148,89 @@ DealerIQ’s **Generative AI Use Cases** combine:
 Together, these use cases create a **human-like, context-aware dealer ecosystem** where GenAI augments every business interaction —  
 from field sales to support, marketing, and executive insights.
 
+# 🧠 DealerIQ – Generative AI Architecture Mapping
+
+This table connects DealerIQ’s GenAI use cases to their **technical building blocks**, showing which ones use:
+- **LLM (Large Language Models)** — GPT, Claude, Mistral, DealerIQ-LLM  
+- **RAG (Retrieval-Augmented Generation)** — grounding answers with verified data from Vector DB and Graph DB  
+- **Fine-Tuning (Domain Adaptation)** — customizing LLM behavior on dealer-specific text  
+- **RLHF (Reinforcement Learning from Human Feedback)** — iterative quality improvement  
+- **Multi-Modal AI** — combining text, image, and document reasoning  
+
+---
+
+| **Use Case** | **GenAI Method(s)** | **Key Components / Tools** | **Input Sources** | **Output / Deliverable** | **Purpose / Description** |
+|---------------|--------------------|-----------------------------|-------------------|---------------------------|----------------------------|
+| **Dealer Conversational Assistant** | LLM + RAG | Spring AI, LangChain, Weaviate, Neo4j | Dealer queries, manuals | Natural-language response | Contextual, conversational dealer support assistant. |
+| **Product Information Summarization** | LLM + Fine-Tuning | DealerIQ-LLM, OpenAI API, MLflow Registry | Product specs, manuals | Concise technical summaries | Generates simplified summaries for complex product documentation. |
+| **Dynamic Quote Generator** | LLM + RAG | LangChain, Pricing API, Dealer Profile DB | Dealer request, pricing data | Auto-generated quote | Creates personalized, live-pricing dealer quotes. |
+| **Promotion Message Generation** | LLM + Fine-Tuning | Mistral / GPT + Marketing Data | Campaign metadata | Dealer-specific messages | Crafts custom promotions aligned with dealer segments. |
+| **Support Ticket Summarization** | LLM | DealerIQ-LLM, LangFuse | Support logs, emails | Short summaries | Summarizes multi-turn support conversations for internal reporting. |
+| **Email Draft Assistant** | LLM + RLHF | DealerIQ-LLM + Feedback DB | Dealer data, CRM context | Personalized message drafts | Generates or refines outreach communications using context memory. |
+| **Product Compatibility Reasoning** | RAG + Graph Reasoning | Neo4j + LangChain + DealerIQ-LLM | Product relationships | Compatibility answer | Performs cross-brand compatibility Q&A grounded in graph data. |
+| **Knowledge Base Creation (Auto-Docs)** | LLM + Fine-Tuning | OpenAI API, DealerIQ Corpus | Technical manuals, SOPs | Structured KB entries | Auto-generates knowledge base articles from internal content. |
+| **Visual Product Description Generator** | Multi-Modal | CLIP, BLIP-2, DealerIQ Vision Model | Product images, metadata | Natural product description | Creates descriptive text from visual data for catalogs. |
+| **Dealer Training Assistant** | LLM + RAG | LangChain, Vector DB | Learning materials, manuals | Answer or guide | Provides conversational learning and training support. |
+| **Sentiment Narrative Builder** | LLM + RAG | DealerIQ-LLM, Analytics API | Feedback datasets | Narrative sentiment summary | Converts aggregated sentiment into natural language summaries. |
+| **GenAI Report Builder** | LLM + RAG + Fine-Tuning | LangChain, BI APIs, Weaviate | BI metrics, KPIs | Text + visual report | Auto-generates BI summaries and executive narratives. |
+| **Product Comparison Assistant** | RAG + LLM | LangChain, Neo4j, Vector DB | Product attributes | Comparison narrative | Compares multiple products side by side with reasoning. |
+| **Warranty Claim Summarizer** | LLM + Fine-Tuning | DealerIQ-LLM, LangFuse | Warranty claim logs | Condensed claim summary | Extracts essential details from long warranty submissions. |
+| **Knowledge Graph QA** | RAG + Graph Reasoning | Neo4j, LangChain | Graph embeddings | Structured answer | Retrieves and reasons across graph relationships to produce factual answers. |
+| **Multi-Modal Product Q&A** | Multi-Modal + RAG | CLIP, LangChain, Weaviate | Product image, text question | Text answer | Combines image and text understanding to answer dealer visual queries. |
+| **Dealer Summary Generator** | LLM + RAG | LangChain + BI Data Layer | Dealer metrics, KPIs | Dealer summary text | Generates narrative summaries for dealer performance reports. |
+| **AI Meeting Note Generator** | LLM + Speech-to-Text | Whisper, DealerIQ-LLM | Meeting transcript | Actionable meeting notes | Summarizes meeting discussions into key takeaways and actions. |
+| **Prompt Versioning & Evaluation** | GenAIOps + RLHF | LangFuse, PromptLayer | Prompt logs, responses | Prompt performance scores | Evaluates prompts for relevance, accuracy, and efficiency. |
+| **LLM Fine-Tuning (DealerIQ-LLM)** | Fine-Tuning | Hugging Face, MLflow, LoRA Adapters | Domain corpus | Fine-tuned model | Trains DealerIQ’s custom LLM for specialized dealer context. |
+| **Feedback-Informed Optimization (RLHF)** | RLHF | Hugging Face RLHF Trainer, LangFuse | Dealer feedback, model output | Improved LLM weights | Reinforces AI response quality using dealer feedback loops. |
+| **Voice Interaction Assistant** | Multi-Modal + LLM | Whisper + DealerIQ-LLM | Spoken queries | Text or speech output | Enables voice-based product lookup and Q&A. |
+| **Code & Schema Generator** | LLM | DealerIQ-LLM, EDM Metadata | EDM schema, API definitions | Generated code / documentation | Auto-generates schema definitions, SDKs, and documentation. |
+| **Safety & Guardrail Enforcement** | LLM + Rules Engine | Guardrails.ai, Spring AI | Prompts, responses | Filtered, compliant output | Filters PII, toxic content, and policy-violating prompts. |
+| **Multi-Language Translation Layer** | LLM + Fine-Tuning | Mistral / NLLB + Translation DB | Dealer text, chat logs | Translated text | Handles multilingual dealer queries across global regions. |
+| **Product Launch Content Generator** | LLM + RAG | DealerIQ-LLM + Marketing DB | Product metadata | Launch content | Generates multilingual, brand-aligned launch announcements. |
+| **GenAI Cost Optimizer** | GenAIOps | LangSmith + Prometheus | Token usage logs | Cost analytics dashboard | Monitors and optimizes token cost and LLM API usage. |
+| **Adaptive Dealer Persona Engine** | LLM + RLHF + Fine-Tuning | DealerIQ-LLM, Persona DB | Dealer history, preferences | Persona-conditioned responses | Adjusts tone, detail, and structure of responses per dealer persona. |
+| **Knowledge Refresh Automation** | RAG + Embeddings | LangChain + Weaviate | Updated docs | Refreshed embedding indexes | Keeps AI context current via scheduled RAG updates. |
+| **Anomaly Explanation Generator** | LLM + RAG | DealerIQ-LLM + AIOps Logs | Drift / error logs | RCA summary | Generates plain-language explanations for operational anomalies. |
+| **Synthetic Dealer Q&A Generator** | LLM + Fine-Tuning | OpenAI API + Synthetic Data Pipeline | Dealer corpus | Q&A pairs dataset | Produces synthetic Q&A examples for safe fine-tuning. |
+
+## GenAI Capability Breakdown by Technical Method
+
+| **GenAI Method** | **DealerIQ Capability Areas** | **Example Use Cases** |
+|------------------|-------------------------------|------------------------|
+| **LLM (Core)** | Conversational reasoning, summarization, drafting | Dealer Assistant, Support Summarizer, Email Drafting |
+| **RAG (Retrieval-Augmented Generation)** | Context-grounded factual answers | Product Q&A, Knowledge Search, GenAI Report Builder |
+| **Fine-Tuning** | Domain adaptation, personalization | DealerIQ-LLM training, Product Summaries, Promotion Generator |
+| **RLHF** | Feedback-driven response optimization | Dealer Feedback Loops, Persona Engine, Prompt Evaluation |
+| **Multi-Modal AI** | Visual + text reasoning | Visual Product QA, Image-to-Text Descriptions, Voice Assistant |
+| **GenAIOps** | Observability, cost, and prompt governance | Prompt Versioning, GenAI Cost Optimizer, Guardrails |
+
+## DealerIQ GenAI Platform Components
+
+| **Layer** | **Component / Tool** | **Function** |
+|------------|----------------------|---------------|
+| **LLM Orchestration Layer** | Spring AI + LangChain | Routes and manages model queries |
+| **Custom LLMs** | DealerIQ-LLM, GPT, Claude, Mistral | Core text generation models |
+| **Vector Store (RAG)** | Weaviate / Pinecone | Context retrieval and grounding |
+| **Graph Reasoning Layer** | Neo4j + Graph Embeddings | Product compatibility and relationship reasoning |
+| **Fine-Tuning Pipeline** | Hugging Face + LoRA | Custom domain model updates |
+| **Feedback & RLHF Engine** | LangFuse + Hugging Face RLHF | Feedback ingestion and model improvement |
+| **Multi-Modal AI Stack** | CLIP / BLIP / Whisper | Visual and speech-based understanding |
+| **Prompt Registry & Evaluator** | PromptLayer + LangFuse | Tracks prompt versions and evaluations |
+| **GenAIOps & Observability** | LangSmith + Prometheus + Grafana | Monitors latency, cost, and accuracy |
+| **Guardrails / Safety Layer** | Guardrails.ai, OpenAI moderation | Enforces compliance and content safety |
+
+## Summary
+
+DealerIQ’s **Generative AI Architecture** seamlessly connects:
+- **LLMs for reasoning and summarization**
+- **RAG for factual grounding**
+- **Fine-tuning for dealer-specific accuracy**
+- **RLHF for adaptive learning**
+- **Multi-modal inputs for richer interaction**
+- **GenAIOps for governance and performance**
+
+This design allows **each GenAI use case** to operate within a **controlled, explainable, and cost-optimized ecosystem**, making DealerIQ’s intelligence **context-aware, compliant, and continuously improving**.
+
 ## 1. Product Overview (50 Detailed Capabilities)
 
 1. Centralized, AI-powered platform for product, pricing, and inventory visibility.  
