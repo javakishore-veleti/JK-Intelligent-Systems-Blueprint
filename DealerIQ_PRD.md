@@ -600,3 +600,4 @@ DealerIQ represents a **complete, end-to-end AI product vision** for modern deal
 
 This README.md serves as your **living PRD and architectural reference**, fully ready for publication, collaboration, or transformation into technical epics.
 
+![DealerIQ Observability](./docs/images/DealerIQ_AI_ProductCabpabilities_Matrix.png)
