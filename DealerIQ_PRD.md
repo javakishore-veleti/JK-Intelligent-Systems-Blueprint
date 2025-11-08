@@ -277,6 +277,25 @@ This document is **not a finalized or released product**, but rather a **compreh
 49. KPI correlation visualization (Grafana).  
 50. Continuous observability pipeline via OpenTelemetry.
 
+## Key Flow Summary
+
+| **Layer** | **Purpose** | **Primary Technologies** |
+|------------|--------------|--------------------------|
+| **Angular Front-End** | Dealer user interface, chat, analytics | Angular 18+, NgRx, WebSockets |
+| **API Gateway & Microservices** | Domain logic & data APIs | Spring Boot, FastAPI, Node.js |
+| **Data Intelligence** | Product embeddings, graphs, metadata | PostgreSQL, Neo4j, Weaviate |
+| **LLM Layer** | AI reasoning & conversation | LangChain, GPT, DealerIQ-LLM |
+| **DataOps/MLOps/GenAIOps** | Continuous improvement pipelines | Kubeflow, MLflow, LangFuse |
+| **Cloud Infra** | Scalability & deployment | Kubernetes, Docker, ArgoCD |
+| **Observability/Security** | Monitoring, logging, governance | Prometheus, ELK, Guardrails.ai |
+| **Feedback Loop** | Continuous learning & personalization | RLHF, Feedback Service, DataOps |
+
+## 🚀 System Behavior Summary
+
+**User → Angular Frontend → API Gateway → LLM Orchestrator → Vector DB / Neo4j → Response Rendered → Feedback Captured → MLOps Retraining → Improved Model Deployment**
+
+This loop ensures **DealerIQ continuously learns** from dealer interactions, improving product recommendations, search accuracy, pricing insights, and engagement outcomes.
+
 ## Summary
 
 DealerIQ represents a **complete, end-to-end AI product vision** for modern dealer ecosystems — uniting:
