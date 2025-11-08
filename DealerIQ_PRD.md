@@ -12,6 +12,55 @@ DealerIQ combines **Angular-based intelligent UX**, **microservices**, **vector 
 
 This document is **not a finalized or released product**, but rather a **comprehensive reference architecture and requirement framework** for research, prototyping, and investment evaluation.
 
+# DealerIQ Enterprise Alignment Matrix
+
+A cross-domain view connecting **business functions**, **data assets**, **AI-powered services**, and **personas** across the Intelligence Suite.
+
+---
+
+| **Business Unit** | **Key Data Sets** | **Key Personas (Customer / Admin / Partner / Supplier)** | **Business Service(s)** | **Input** | **Output** | **Use Case Description** |
+|--------------------|------------------|-----------------------------------------------------------|--------------------------|------------|-------------|---------------------------|
+| **Dealer Management** | Dealer Master, Dealer Region, Dealer Activity Logs, CRM Integration Data | Dealers, Regional Managers, HQ Admins | Dealer Onboarding, Profile Management, Engagement Tracking | Dealer registration forms, CRM feed | Dealer profiles, engagement dashboards | Centralizes dealer information and lifecycle tracking; monitors dealer activity and loyalty. |
+| **Product & Catalog Intelligence** | Product Master, SKU Specs, Supplier Feeds, Product Images, Compatibility Data | Dealers, Product Managers, Suppliers | Product Catalog, Visual Part Recognition, Compatibility Graphs | ERP and OEM feeds, uploaded catalogs | Searchable catalog, AI product recommendations | Unifies product data across OEMs; enables visual and semantic product discovery. |
+| **Inventory & Supply Chain** | Inventory Snapshots, Warehouse Data, Reorder Thresholds, Stock Movement Logs | Dealers, Warehouse Admins, Supply Chain Managers | Real-Time Stock Visibility, Replenishment Forecasting | Stock feeds, ERP signals | Stock dashboards, reorder suggestions | Provides real-time inventory visibility and proactive restocking recommendations. |
+| **Pricing & Revenue Management** | Price Lists, Dealer Discounts, Currency Rates, Promotions, Sales Orders | Dealers, Pricing Analysts, HQ Admins | Dynamic Pricing, Promotion Optimization, Margin Analysis | Product and dealer data, price history | Optimized pricing suggestions, ROI reports | Machine learning-driven price optimization and promotion effectiveness tracking. |
+| **Order & Fulfillment** | Orders, Invoices, Shipments, Payments, Returns | Dealers, Order Managers, Finance Team | Order Placement, Tracking, and Fulfillment Management | Dealer order inputs, product data | Order confirmations, shipment updates | Enables seamless order lifecycle management from dealer request to delivery. |
+| **Dealer Support & Service** | Support Tickets, Knowledge Base, Warranty Logs, Chat Logs | Dealers, Support Agents, AI Assistant, Service Admins | Conversational Support, Issue Triage, Knowledge Search | Dealer queries, support forms | AI responses, resolutions, summarized tickets | Provides 24/7 dealer assistance using LLMs for triage and technical Q&A. |
+| **Dealer Feedback & Engagement** | Feedback Forms, Chat Sentiments, Interaction Logs | Dealers, Feedback Analysts, Model Trainers | Feedback Capture, RLHF Processing, Sentiment Analytics | Dealer feedback messages | Sentiment metrics, RLHF training data | Captures and analyzes feedback to improve AI models and dealer satisfaction. |
+| **Promotion & Campaigns** | Promotion Schedules, Campaign ROI, Dealer Engagement Metrics | Marketing Managers, Dealers, Regional Admins | Promotion Engine, Personalization System | Product and regional sales data | Dealer-specific campaign offers | Personalizes promotional content based on dealer performance and interests. |
+| **Forecasting & Analytics** | Forecast Models, Historical Sales, Demand Signals, ML Metrics | Data Scientists, Regional Managers, HQ Planners | Predictive Forecasting, KPI Dashboards | Transaction data, model inputs | Sales forecasts, anomaly alerts | Predicts demand, detects trends, and powers decision intelligence dashboards. |
+| **LLM Orchestration & GenAI** | Prompts, Embeddings, Context Logs, LLM Responses | Dealers, AI Orchestrator, GenAI Engineers | Conversational AI, RAG Grounding, Summarization | Dealer prompts, product documents | AI-generated responses, summaries | Enables natural language interactions for product lookup, pricing, and service help. |
+| **Fine-Tuning & Model Management** | Model Weights, Training Data, MLflow Runs, Evaluation Metrics | AI Engineers, MLOps Admins | Model Training, Fine-Tuning, Registry Management | Datasets, training configuration | Fine-tuned models, evaluation reports | Automates ML/GenAI lifecycle for continuous improvement. |
+| **Embeddings & Knowledge Graph** | Text Embeddings, Graph Links, Product Relations | Data Scientists, AI Orchestrator | Vectorization, Graph Reasoning | Manuals, catalogs, chat transcripts | Vector DB indexes, relationship maps | Enables semantic search, contextual RAG retrieval, and reasoning. |
+| **DataOps** | Raw Data, dbt Models, Metadata, Quality Reports | Data Engineers, Data Stewards | Data Validation, Transformation, Lineage Tracking | Ingested raw feeds | Cleaned and validated datasets | Ensures high-quality, lineage-aware data for analytics and AI pipelines. |
+| **MLOps** | Model Metadata, Feature Store, Drift Metrics, Pipeline Logs | MLOps Engineers, AI Administrators | Model Monitoring, Auto-Retraining, Deployment Automation | Feature updates, retrain triggers | Registered models, performance dashboards | Automates model lifecycle management and continuous retraining. |
+| **GenAIOps** | Prompts, Token Metrics, Prompt Versions, Evaluation Logs | GenAI Engineers, Cost Analysts | Prompt Optimization, Cost Monitoring, Performance Tracking | Prompt usage data, LLM telemetry | Prompt success metrics, token cost reports | Tracks and optimizes LLM prompt performance and cost efficiency. |
+| **AIOps / Observability** | System Logs, Metrics, Alerts, Traces, Drift Reports | SREs, DevOps Engineers, AIOps Bots | Incident Detection, Root Cause Analysis, Auto-Healing | Telemetry data, alert triggers | Anomaly alerts, RCA summaries | Monitors system health, detects anomalies, and self-heals issues automatically. |
+| **Executive Analytics & Intelligence** | KPI Dashboards, Dealer Insights, Model Metrics | Executives, Regional Directors, Strategy Teams | BI Dashboards, KPI Forecasting, Insight Reports | Aggregated EDW data | Visual analytics, decision insights | Provides strategic insights for sales, revenue, and performance optimization. |
+| **Security & Governance** | Access Logs, Policy Documents, User Roles, Audit Trails | Security Admins, Compliance Officers | Access Control, Audit Logging, Compliance Reporting | User activity data, policy configs | Compliance reports, security alerts | Ensures data privacy, access governance, and regulatory compliance. |
+| **Cloud Infrastructure & Deployment** | CI/CD Pipelines, Kubernetes Configs, Resource Metrics | DevOps Engineers, Cloud Admins | Deployment Automation, Scaling, Version Rollouts | Build artifacts, Helm charts | Deployed services, status dashboards | Manages deployment pipelines and multi-cloud scalability. |
+| **Dealer Portal UX (Angular Front-End)** | UI Logs, Session Data, Dealer Preferences | Dealers, Front-End Devs, UX Designers | Personalized Dashboards, Conversational Search | Dealer input, telemetry data | Dealer UI rendering, recommendations | Provides responsive, AI-driven dealer experience with analytics and personalization. |
+| **Event Streaming Layer** | Kafka Topics, Event Schemas, DLQs, Schema Registry | Backend Engineers, DataOps Admins | Real-Time Event Processing, ETL Streaming | Application and service events | Processed, validated event data | Supports near real-time intelligence and integration with downstream analytics. |
+| **Observability & DORA Metrics** | Latency Metrics, MTTR, CFR, DF, LTC | SREs, Product Owners | Unified Observability & DORA Dashboards | Telemetry, deployment metrics | Grafana DORA dashboard | Tracks engineering velocity, reliability, and model operational performance. |
+| **Feedback Learning Loop** | Dealer Feedback, LLM Responses, Model Drift Alerts | Dealers, AI Trainer, Data Scientist | Closed-Loop Learning System | Dealer interactions | Updated models, improved responses | Feeds user interactions back into retraining and fine-tuning pipelines. |
+| **Admin & Configuration Console** | Service Metadata, API Keys, Config Parameters | Admins, DevOps, Security Leads | Configuration, Monitoring, Multi-Tenant Control | Admin input, pipeline status | Configuration states, usage metrics | Provides centralized administration of configurations and AI orchestration. |
+
+---
+
+## Summary on Enterprise Alignment Matrix
+
+This table captures the **entire DealerIQ ecosystem** mapped by:
+- **Business Units** (functional domains)
+- **Data Sets** (aligned with EDM and EDW)
+- **Personas** (end users, admins, partners, suppliers)
+- **Services** (microservices or AI components)
+- **Inputs / Outputs** (data and events)
+- **Use Cases** (business outcomes)
+
+DealerIQ’s design ensures **tight coupling between data, intelligence, and operations**,  
+making it a **data-driven enterprise AI system** with measurable value across all stakeholders.
+
+
 ## 1. Product Overview (50 Detailed Capabilities)
 
 1. Centralized, AI-powered platform for product, pricing, and inventory visibility.  
