@@ -148,7 +148,7 @@ DealerIQ’s **Generative AI Use Cases** combine:
 Together, these use cases create a **human-like, context-aware dealer ecosystem** where GenAI augments every business interaction —  
 from field sales to support, marketing, and executive insights.
 
-# 🧠 DealerIQ – Generative AI Architecture Mapping
+# DealerIQ – Generative AI Architecture Mapping
 
 This table connects DealerIQ’s GenAI use cases to their **technical building blocks**, showing which ones use:
 - **LLM (Large Language Models)** — GPT, Claude, Mistral, DealerIQ-LLM  
