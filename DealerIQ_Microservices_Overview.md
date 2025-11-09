@@ -1,4 +1,6 @@
-# DealerIQ – Enterprise Microservices (Full AI + Data + Event Extensions)
+# DealerIQ – Enterprise Microservices (Full AI + Data + Events)
+
+![DealerIQ Microservices Overview](./docs/images/DealerIQ_MicroServices_Overview.png)
 
 ## 1. Dealer Domain
 
