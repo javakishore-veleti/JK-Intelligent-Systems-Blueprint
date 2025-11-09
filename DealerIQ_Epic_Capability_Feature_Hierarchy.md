@@ -1,5 +1,7 @@
 # DealerIQ – Agile Epic → Capability → Feature Hierarchy
 
+![DealerIQ Agile Roadmap](./docs/images/DealerIQ_Agile_Roadmap.png)
+
 ## 1. Dealer Domain
 
 | **Epic** | **Capability** | **Feature Examples** |
